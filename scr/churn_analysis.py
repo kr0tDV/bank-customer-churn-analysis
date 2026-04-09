@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
 import os
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -162,3 +163,10 @@ plt.savefig(os.path.join(output_dir, "feature_importance.png"), dpi=150)
 plt.close()
 
 print(f"\nВсе результаты сохранены в папку {output_dir}")
+
+os.makedirs('models', exist_ok=True)
+joblib.dump(rf, 'models/model_rf.pkl')
+joblib.dump(scaler, 'models/scaler.pkl')
+joblib.dump(le_geo, 'models/le_geo.pkl')
+joblib.dump(le_gender, 'models/le_gender.pkl')
+print("Модель и предобработчики сохранены в папку 'models'.")

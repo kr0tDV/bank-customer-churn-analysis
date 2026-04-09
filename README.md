@@ -88,7 +88,6 @@ Bank Customers An/
 │   ├── geography_analysis/  # анализ по странам
 │   ├── churn_analysis/      # анализ оттока
 │   └── top_active_customers/# топ-10 клиентов
-├── image/                   # изображения (если есть)
 ├── scr/                     # скрипты
 │   ├── main.py              # очистка данных
 │   ├── geography_analysis.py
@@ -106,7 +105,7 @@ Bank Customers An/
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/ВАШ_ЛОГИН/bank-customer-churn-analysis.git
+   git clone https://github.com/kr0tDV/bank-customer-churn-analysis.git
    cd bank-customer-churn-analysis
    ```
 
